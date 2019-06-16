@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:elevation="4dp"
     app:title="Test Toolbar"
+    android:background="#AA0E0E"
     app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
 </android.support.v7.widget.Toolbar>
