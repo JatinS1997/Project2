@@ -7,7 +7,23 @@ public class datafile {
 
     public static String title [] = new String[]{
 
-            "Jatin Sharma",
+
+            "Jatin",
+            "Dimpi",
+            "Amrit",
+            "Ritik",
+            "Rahul",
+            "Jatin",
+            "Dimpi",
+            "Amrit",
+            "Ritik",
+            "Rahul",
+            "Jatin",
+            "Dimpi",
+            "Amrit",
+            "Ritik",
+            "Rahul",
+            "Jatin",
             "Dimpi",
             "Amrit",
             "Ritik",
@@ -19,6 +35,21 @@ public class datafile {
     public static int[] picturePath = new int[]
             {
 
+                    R.drawable.pic_3,
+                    R.drawable.pic_4,
+                    R.drawable.pic_5,
+                    R.drawable.pic_6,
+                    R.drawable.pic_7,
+                    R.drawable.pic_3,
+                    R.drawable.pic_4,
+                    R.drawable.pic_5,
+                    R.drawable.pic_6,
+                    R.drawable.pic_7,
+                    R.drawable.pic_3,
+                    R.drawable.pic_4,
+                    R.drawable.pic_5,
+                    R.drawable.pic_6,
+                    R.drawable.pic_7,
                     R.drawable.pic_3,
                     R.drawable.pic_4,
                     R.drawable.pic_5,
