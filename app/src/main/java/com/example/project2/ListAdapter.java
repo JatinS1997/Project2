@@ -1,6 +1,9 @@
 package com.example.project2;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ListAdapter extends RecyclerView.Adapter {
+
+    Context context;
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -20,6 +25,15 @@ public class ListAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
 
         ((ListViewHolder) viewHolder).bindView(i);
+        ((ListViewHolder) viewHolder).constraintLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, DetailsActivity.class);
+                intent.putExtra("name","Jatin");
+                context.startActivity(intent);
+
+            }
+        });
 
     }
 
@@ -34,6 +48,7 @@ public class ListAdapter extends RecyclerView.Adapter {
 
         private TextView mItemText;
         private ImageView mItemImage;
+        ConstraintLayout constraintLayout;
 
 
 
