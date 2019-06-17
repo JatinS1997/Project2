@@ -29,7 +29,7 @@ public class ListAdapter extends RecyclerView.Adapter {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, DetailsActivity.class);
-                intent.putExtra("name","Jatin");
+                intent.putExtra("name","Test");
                 context.startActivity(intent);
 
             }
